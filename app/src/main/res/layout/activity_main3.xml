@@ -4,31 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HiLogActivity">
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/print_log"
+        android:id="@+id/test_hilog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="print_log"
-        android:onClick="printLog"
         app:layout_constraintTop_toTopOf="parent"
+        android:text="HiLog"
+        android:onClick="hiLog"
         />
     <Button
-        android:id="@+id/show_log_window"
+        android:id="@+id/test_hiExecutor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="show_log_window"
-        android:onClick="showLogWindow"
-        app:layout_constraintTop_toBottomOf="@id/print_log"
+        app:layout_constraintTop_toBottomOf="@id/test_hilog"
+        android:text="HiExecutor"
+        android:onClick="hiExecutor"
         />
-    <Button
-        android:id="@+id/close_log_window"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="close_log_window"
-        android:onClick="closeLogWindow"
-        app:layout_constraintTop_toBottomOf="@id/show_log_window"
-        />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

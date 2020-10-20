@@ -15,7 +15,7 @@ import org.devio.hi.library.log.HiLogManager;
  * @author jianlinduan
  * 2020/10/20, Create file
  */
-class MainApp extends Application {
+public class MainApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();

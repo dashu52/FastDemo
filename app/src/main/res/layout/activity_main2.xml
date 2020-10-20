@@ -4,6 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
-
+    tools:context=".HiExecutorActivity">
+    <Button
+        android:id="@+id/resume_exe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="resume_exe"
+        android:onClick="resume"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/pause_exe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pause_exe"
+        android:onClick="pause"
+        app:layout_constraintTop_toBottomOf="@id/resume_exe"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

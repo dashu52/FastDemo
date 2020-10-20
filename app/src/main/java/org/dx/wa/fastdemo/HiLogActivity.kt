@@ -6,7 +6,7 @@ import android.view.View
 import org.devio.hi.library.executor.HiExecutor
 import org.devio.hi.library.log.*
 
-class MainActivity : AppCompatActivity() {
+class HiLogActivity : AppCompatActivity() {
     private lateinit var viewPrinter:HiViewPrinter
 
     override fun onCreate(savedInstanceState: Bundle?) {

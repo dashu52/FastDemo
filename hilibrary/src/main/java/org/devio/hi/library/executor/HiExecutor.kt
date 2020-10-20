@@ -64,11 +64,12 @@ object HiExecutor {
 
             override fun afterExecute(r: Runnable?, t: Throwable?) {
                 //监控线程池耗时任务,线程创建数量,正在运行的数量
-                HiLog.e(TAG, "已执行完的任务的优先级是：" + (r as PriorityRunnable).priority)
+//                HiLog.e(TAG, "已执行完的任务的优先级是：" + (r as PriorityRunnable).priority)
             }
         }
     }
 
+    @JvmOverloads
     fun execute(@IntRange(from = 0, to = 10) priority: Int = 0, runnable: Runnable) {
         hiExecutor.execute(PriorityRunnable(priority, runnable))
     }
