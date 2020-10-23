@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import org.devio.hi.library.executor.HiExecutor
 import org.devio.hi.library.log.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class HiLogActivity : AppCompatActivity() {
     private lateinit var viewPrinter:HiViewPrinter
